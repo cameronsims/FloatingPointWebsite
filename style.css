@@ -1,0 +1,72 @@
+html {
+	background: linear-gradient(0deg, #000000, #303060);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: consolas;
+}
+
+div.bit-picker-container, button.bit-picker, div.button-picker-container, button.button-picker {
+	display: table-cell;
+	font-size: 2rem;
+}
+
+button.bit-picker {
+	
+}
+
+button.button-picker {
+	width: 100%;
+	
+	margin: 0.2rem 0rem;
+	border: black 0.2rem solid;
+	padding: 0.2rem;
+}
+
+div.content {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+div.bit-field, div.bit-field-header, div.bit-field-value {
+	display: table-cell;
+	text-align: center;
+	justify-content: center;
+	
+	border: black solid 0.25rem;
+	padding: 1rem 0rem;
+
+}
+
+div.button-row {
+	padding: 0.5rem;
+}
+
+div.bit-row, div.button-row {
+	display: table-row;
+}
+
+div.bit-field-header {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+div.sign-field {
+	width: 10%;
+	background: linear-gradient(0deg, #ff5c00 0%, #ff0000 100%);
+}
+
+div.exponent-field {
+	width: 32%;
+	background: linear-gradient(0deg, #5cff00 0%, #88ff88 100%);
+}
+
+div.mantissa-field {
+	width: 68%;
+	background: linear-gradient(0deg, #005cff 0%, #8888ff 100%);
+}
+
+div.bit-field-value#result {
+	background: linear-gradient(0deg, #ffff00 0%, #ffffff 100%);
+	font-size: 4rem;
+}

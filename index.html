@@ -1,0 +1,72 @@
+<!-- Cameron Sims 
+      
+ 	 Demonstration of 8, 16, 32 and 64 bit floating point numbers.
+ 	 
+ 	 -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<title>Floating Point Demonstration</title>
+	
+		<!-- Javascript! -->
+		<script src="./tickbox.js"></script>
+		
+		<script src="./float.js"></script>
+		<script src="./float-64.js"></script>
+		<script src="./float-32.js"></script>
+		<script src="./minifloat-16.js"></script>
+		<script src="./minifloat-8.js"></script>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+		<link rel="stylesheet" type="text/css" href="./customfloat-popup.css"/>
+	
+	</head>
+	
+	
+	
+	<body>
+	
+		<div class="content">
+			<div class="button-row">
+				<div class="button-picker-container"><button class="button-picker" onclick="float8_init()" >8-Bit Float</button></div>
+				<div class="button-picker-container"><button class="button-picker" onclick="float16_init()">16-Bit Float</button></div>
+				<div class="button-picker-container"><button class="button-picker" onclick="float32_init()">32-Bit Float</button></div>
+				<div class="button-picker-container"><button class="button-picker" onclick="float64_init()">64-Bit Float</button></div>
+				<div class="button-picker-container"><button class="button-picker" onclick="float_init()">Custom Float</button></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="bit-row">
+				<div class="bit-field-header sign-field"    >SIGN</div>
+				<div class="bit-field-header exponent-field">EXPONENT</div>
+				<div class="bit-field-header mantissa-field">MANTISSA</div>
+			</div>
+		
+			<div class="bit-row">
+				<div id="sign-field" class="bit-field sign-field"></div>
+				<div id="exponent-field" class="bit-field exponent-field"></div>
+				<div id="mantissa-field" class="bit-field mantissa-field"></div>
+			</div>
+			
+			<div class="bit-row">
+				<div id="sign-result" class="bit-field-value sign-field"></div>
+				<div id="exponent-result" class="bit-field-value exponent-field"></div>
+				<div id="mantissa-result" class="bit-field-value mantissa-field"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="bit-row">
+				<div id="result" class="bit-field-value"></div>
+			</div>
+		</div>
+		
+		
+	<body>
+
+</html>
